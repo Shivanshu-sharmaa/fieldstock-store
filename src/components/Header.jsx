@@ -10,10 +10,14 @@ export default function Header({ onCartClick }) {
         <Link to="/" className="wordmark">
           Attire<span>store</span>
         </Link>
-        <Link to="/" className="cart-toggle">Home</Link>
-        <button className="cart-toggle" onClick={onCartClick}>
-          Bag {itemCount > 0 ? `(${itemCount})` : ''}
-        </button>
+        <nav className="site-header__actions">
+          <Link to="/" className="cart-toggle">Home</Link>
+          <Link to="/login" className="cart-toggle">Login</Link>
+          <Link to="/signup" className="cart-toggle">Create account</Link>
+          <button className="cart-toggle" onClick={onCartClick}>
+            Bag {itemCount > 0 ? `(${itemCount})` : ''}
+          </button>
+        </nav>
       </div>
     </header>
   );
