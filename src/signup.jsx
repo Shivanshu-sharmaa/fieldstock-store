@@ -15,7 +15,7 @@ function Signup() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/signup",
+        "/api/signup",
         {
           method: "POST",
           headers: {
