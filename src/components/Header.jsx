@@ -10,6 +10,7 @@ export default function Header({ onCartClick }) {
         <Link to="/" className="wordmark">
           Attire<span>store</span>
         </Link>
+        <Link to="/" className="cart-toggle">Home</Link>
         <button className="cart-toggle" onClick={onCartClick}>
           Bag {itemCount > 0 ? `(${itemCount})` : ''}
         </button>
